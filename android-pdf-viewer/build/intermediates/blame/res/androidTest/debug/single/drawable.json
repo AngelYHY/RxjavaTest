@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\freestar\\RxjavaTest\\android-pdf-viewer\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\default_scroll_handle_bottom.xml",
+        "source": "D:\\freestar\\RxjavaTest\\android-pdf-viewer\\build\\intermediates\\bundles\\debug\\res\\drawable\\default_scroll_handle_bottom.xml"
+    },
+    {
+        "merged": "D:\\freestar\\RxjavaTest\\android-pdf-viewer\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\default_scroll_handle_top.xml",
+        "source": "D:\\freestar\\RxjavaTest\\android-pdf-viewer\\build\\intermediates\\bundles\\debug\\res\\drawable\\default_scroll_handle_top.xml"
+    },
+    {
+        "merged": "D:\\freestar\\RxjavaTest\\android-pdf-viewer\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\default_scroll_handle_left.xml",
+        "source": "D:\\freestar\\RxjavaTest\\android-pdf-viewer\\build\\intermediates\\bundles\\debug\\res\\drawable\\default_scroll_handle_left.xml"
+    },
+    {
+        "merged": "D:\\freestar\\RxjavaTest\\android-pdf-viewer\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\default_scroll_handle_right.xml",
+        "source": "D:\\freestar\\RxjavaTest\\android-pdf-viewer\\build\\intermediates\\bundles\\debug\\res\\drawable\\default_scroll_handle_right.xml"
+    }
+]

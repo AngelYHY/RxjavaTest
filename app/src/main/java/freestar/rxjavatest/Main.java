@@ -15,6 +15,9 @@ import java.io.OutputStream;
 
 import okhttp3.OkHttpClient;
 import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import rx.Subscriber;
@@ -34,6 +37,34 @@ public class Main extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//        goOne();
+        goTwo();
+    }
+
+    private void goTwo() {
+        getApi().download("http://www.yunmath.com/Files/666.apk").enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                if (response.isSuccessful()) {
+                    if (writeResponseBodyToDisk(response.body())) {
+                        installApk();
+                        Log.e("FreeStar", "Main→→→onResponse:" + 666);
+                    } else {
+                        Log.e("FreeStar", "Main→→→onResponse:" + false);
+                    }
+                } else {
+                    Log.e(TAG, "server contact failed");
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+                Log.e("FreeStar", "Main→→→onFailure:" + t.getMessage());
+            }
+        });
+    }
+
+    private void goOne() {
         getApi().downloadFile()
                 .observeOn(Schedulers.io())
                 .subscribeOn(AndroidSchedulers.mainThread())
@@ -55,7 +86,6 @@ public class Main extends AppCompatActivity {
                         }
                     }
                 });
-
     }
 
     private void installApk() {
@@ -81,7 +111,7 @@ public class Main extends AppCompatActivity {
 
     public boolean writeResponseBodyToDisk(ResponseBody body) {
 
-        Log.d(TAG, "contentType:>>>>" + body.contentType().toString());
+//        Log.d(TAG, "contentType:>>>>" + body.contentType().toString());
 
         String fileSuffix = ".apk";
 
@@ -101,7 +131,7 @@ public class Main extends AppCompatActivity {
             try {
                 byte[] fileReader = new byte[4096];
 
-                long fileSize = body.contentLength();
+//                long fileSize = body.contentLength();
                 long fileSizeDownloaded = 0;
 
                 inputStream = body.byteStream();
@@ -118,7 +148,7 @@ public class Main extends AppCompatActivity {
 
                     fileSizeDownloaded += read;
 
-                    Log.d(TAG, "file download: " + fileSizeDownloaded + " of " + fileSize);
+//                    Log.d(TAG, "file download: " + fileSizeDownloaded + " of " + fileSize);
                 }
 
                 outputStream.flush();

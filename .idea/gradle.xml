@@ -8,8 +8,13 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/PDFdemo" />
+            <option value="$PROJECT_DIR$/ServiceBestPractice" />
+            <option value="$PROJECT_DIR$/android-pdf-viewer" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/cniao5" />
+            <option value="$PROJECT_DIR$/download" />
+            <option value="$PROJECT_DIR$/sample" />
             <option value="$PROJECT_DIR$/sharesdk" />
           </set>
         </option>

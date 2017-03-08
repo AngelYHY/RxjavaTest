@@ -1,1 +1,1 @@
-include ':app', ':sharesdk', ':cniao5'
+include ':app', ':sharesdk', ':cniao5', ':PDFdemo', ':sample', ':android-pdf-viewer', ':download', ':ServiceBestPractice'

@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/PDFdemo/PDFdemo.iml" filepath="$PROJECT_DIR$/PDFdemo/PDFdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/RxjavaTest.iml" filepath="$PROJECT_DIR$/RxjavaTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServiceBestPractice/ServiceBestPractice.iml" filepath="$PROJECT_DIR$/ServiceBestPractice/ServiceBestPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-pdf-viewer/android-pdf-viewer.iml" filepath="$PROJECT_DIR$/android-pdf-viewer/android-pdf-viewer.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/cniao5/cniao5.iml" filepath="$PROJECT_DIR$/cniao5/cniao5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/download/download.iml" filepath="$PROJECT_DIR$/download/download.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/sharesdk/sharesdk.iml" filepath="$PROJECT_DIR$/sharesdk/sharesdk.iml" />
     </modules>
   </component>
